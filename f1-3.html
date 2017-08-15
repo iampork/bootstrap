@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ie注释代码</title>
+		<style type="text/css">
+			body{
+				background: #000;color: #fff;font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		标准浏览器显示黑色背景白色字体
+		<br />
+		IE浏览器显示红色背景和黄色字体
+		<script type="text/javascript">
+			var bd = document.getElementsByTagName('body')[0];
+			<!--[if IE]>
+			bd.style.background="#F00";
+			bd.style.color="#ff0";
+			<![endif]-->
+		</script>
+	</body>
+</html>

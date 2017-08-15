@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>:empty</title>
+		<style type="text/css">
+			li{
+				display: inline-block;
+				height: 24px;
+				width: 24px;
+			}
+			.ul8>li:empty{
+				background: #ff0;
+			}
+			.add{display: block;width: 200px;color: #ffo;}
+		</style>
+	</head>
+	<body>
+		<p>div:empty</p>
+		<ul class="ul8">
+			<li style="display: block;width: 200px;">下面这个li为empty</li>
+			<li id="Li1"></li>
+		</ul>
+		<input type="button" name="" id="" value="添加" onclick="add();" />
+		<script type="text/javascript">
+			function add(){
+				var oUl=document.getElementsByClassName("ul8")[0];
+				var oli=oUl.getElementsByTagName("li")[1];
+				oli.innerHTML="重庆师范大学计算机学院";
+				oli.className+="add";
+			}
+		</script>
+	</body>
+</html>
