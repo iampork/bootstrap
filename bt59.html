@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+	<meta name="viewport" content="width=device-width,initail-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
+</head>
+<body>
+	<h3>用户登录</h3>
+	<form method="post" action="" class="form-horizontal">
+		<div class="control-group form-inline">
+			<div class="control-label">
+				<label for="userName">用户名：</label>
+			</div>
+			<div class="controls">
+				<input id="userName" type="text"></input>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="control-label">
+				<label for="userPsw">密码：</label>
+			</div>
+			<div class="controls">
+				<input type="password" id="userPsw" name="">
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="control-label">
+				<label for="validate" >验证码：</label>
+			</div>
+			<div class="controls">
+				<input id="validate" type="text"></input>
+				<img src="bootstrap/img/yzm.png" alt="1234">
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="control-label">
+				<label for="keepLogin">记住我的登录信息</label>
+			</div>
+			<div class="controls">
+				<input id="keepLogin" type="checkbox"></input>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="control-label">
+				<button type="submit" class="btn_login">登录</button>
+			</div>
+			<a href="#" class="reg">用户注册</a>
+		</div>
+		<label>s1选项<input type="radio" name="same1" value="s1"></label>
+		<label>s2选项<input type="radio" name="same1" value="s2"></label>
+		<label>s3选项<input type="radio" name="same1" value="s3"></label>
+		<label>d2选项<input type="radio" name="same4" value="d2"></label>
+		<label>d3选项<input type="radio" name="same4" value="d3"></label>
+		<label>d1选项<input type="radio" name="same4" value="d1"></label>
+	</form>
+</body>
+</html>
